@@ -1,0 +1,228 @@
+* {
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* ------nawigacja-----*/
+.navbar {
+ background-color: rgba(255, 255, 255, 0.9);
+ text-transform: uppercase;
+ font-weight: 700;
+ font-size: 1rem;
+ letter-spacing: 0.1rem;
+ text-align: center;
+}
+
+.navbar-nav li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: green;
+}
+/*---------header-------*/
+header {
+    background-image: url(img/banner.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.name {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: white;  
+}
+
+.name p {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+/*---------about------*/
+.about {
+    padding: 3rem 3rem 3rem;
+    margin: 1.5rem auto;
+    width: 75%;
+}
+
+.row.about-me {
+    padding-top: 1rem;
+}
+.about-me.icon {
+    padding: 1.5rem 1rem;
+    margin: 0 auto;   
+}
+
+.fa-female {
+    color: rgb(49, 136, 111);
+    font-size: 11rem;
+}
+
+.about-me {
+    margin: 0;
+    padding: 0;
+}
+.underline {
+    width: 18rem;
+    height: .2rem;
+    margin: 0 auto 2rem;
+    background-color: green;
+}
+
+/*-----portfolio-----*/
+.portfolio {
+    padding-top: 3rem;
+}
+.gallery {    
+    max-width: 1920px;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 0 0;
+    border: 1px solid white;
+}
+
+.gallery-item p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 50vh;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    cursor: default;
+}
+
+.gallery-item:hover p {
+    opacity: 1;
+}
+
+.gallery-item:nth-of-type(1) {
+    max-width: 100%;
+    background-image: url(img/photo1.jpg);
+}
+
+.gallery-item:nth-of-type(2) {
+    max-width: 100%;
+    background-image: url(img/photo2.jpg);
+}
+
+.gallery-item:nth-of-type(3) {
+    max-width: 100%;
+    background-image: url(img/photo3.jpg);
+}
+
+.gallery-item:nth-of-type(4) {
+    max-width: 100%;
+    background-image: url(img/photo4.jpg);
+}
+/*------skills------*/
+.skills {
+    margin: 0;
+    padding-top: 4rem;
+}
+.skills h1 {
+    padding-top: 1rem;
+}
+
+.skill {
+    padding: 3rem 1rem;
+}
+
+.skill p {
+    padding: 2rem 0rem;
+}
+.skill .fas {
+    font-size: 6rem;
+}
+
+.fa-fish {
+    color: green;
+}
+
+.fa-carrot {
+    color: orange;
+}
+
+.fa-hamburger {
+    color: red;
+}
+/*--------kontakt------*/
+.contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-top: 1rem;
+}
+/*----------footer------*/
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0 0.5rem;
+}
+
+.copyrights {
+    font-size: 0.7rem;
+}   
+/*--------Media Queries-----*/
+@media (max-width: 767px) {
+    .about {
+        padding: 1.5rem 1rem 1rem 1rem;
+        width: 100%;
+    }
+
+    .about-me.icon {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 0;
+        
+    }
+    
+    .fa-female {
+        font-size: 8rem;
+    }
+
+    .about-me.text p {
+        text-align: center;
+    }
+
+    .gallery {
+        margin: 0 auto;
+
+    }
+    .gallery-item {
+        height: 40vh;
+        background-position: center;
+    }
+    .gallery-item p {
+        line-height: 40vh;
+    }
+
+    .skill {
+        padding: 0;
+    }
+}
+/*-------------------------*/
